@@ -29,14 +29,6 @@ public interface IAlipayApiService {
     AlipaySystemOauthTokenResponse getUserAuthResponse(String authCode);
 
     /**
-     * 检查授权是否过期
-     *
-     * @param userAuth
-     * @return 推荐使用自定义的AlipayUtils中的checkIsAuthValid
-     */
-    boolean checkIsAuthValid(AlipaySystemOauthTokenResponse userAuth);
-
-    /**
      * 获取用户信息
      *
      * @param access_token

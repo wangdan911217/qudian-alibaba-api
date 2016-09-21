@@ -49,16 +49,6 @@ public class AlipayApiService implements IAlipayApiService {
         return response.getAccessToken();
     }
 
-    /**
-     * 检查授权是否过期,
-     *
-     * @param userAuth
-     * @return true:有效、false:无效
-     */
-    public boolean checkIsAuthValid(AlipaySystemOauthTokenResponse userAuth) {
-        return !("40002".equals(userAuth.getCode()) && "isv.code-invalid".equals(userAuth.getSubCode()));
-    }
-
     public AlipaySystemOauthTokenResponse getUserAuthResponse(String authCode) {
         AlipaySystemOauthTokenRequest request
                 = new AlipaySystemOauthTokenRequest();
