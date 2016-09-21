@@ -27,9 +27,9 @@ import java.util.Map;
 /**
  * Created by suzunshou on 16/9/16.
  */
-public class AlipayApiServiceImpl implements IAlipayApiService {
+public class AlipayApiService implements IAlipayApiService {
 
-    private final static Logger logger = LoggerFactory.getLogger(AlipayApiServiceImpl.class);
+    private final static Logger logger = LoggerFactory.getLogger(AlipayApiService.class);
 
     private AlipayApiConfig alipayApiConfig;
 

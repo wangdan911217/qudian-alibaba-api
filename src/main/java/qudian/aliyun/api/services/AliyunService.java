@@ -13,7 +13,7 @@ import java.util.UUID;
 /**
  * Created by suzunshou on 16/9/16.
  */
-public class AliyunServiceImpl implements IAliyunApiService {
+public class AliyunService implements IAliyunApiService {
 
     private AliyunApiConfig aliyunApiConfig;
 
