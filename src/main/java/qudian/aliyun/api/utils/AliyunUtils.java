@@ -73,11 +73,9 @@ public class AliyunUtils {
      */
     public static String getSuffixFromMeta(String meta) {
         if (StringUtils.isNotBlank(meta)) {
-            meta = "image/png";
             return "." + meta.substring(meta.indexOf("/") + 1);
         }
         return null;
     }
-
 
 }
