@@ -53,6 +53,16 @@ public class AlipayApiConfig {
     //收银台字符集
     private String charset;
 
+    public AlipayApiConfig(AlipayClient alipayClient_pay, String seller_id, String product_code, String returnUrl, String notifyUrl, String publicKey) {
+        this.alipayClient_pay = alipayClient_pay;
+        this.seller_id = seller_id;
+        this.product_code = product_code;
+        this.returnUrl = returnUrl;
+        this.notifyUrl = notifyUrl;
+        this.publicKey = publicKey;
+        this.charset = "UTF-8";
+    }
+
     public AlipayApiConfig(AlipayClient alipayClient_pay, String seller_id, String product_code, String returnUrl, String notifyUrl, String publicKey, String charset) {
         this.alipayClient_pay = alipayClient_pay;
         this.seller_id = seller_id;
